@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<style>
+
+   form{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      
+    }
+    .input-container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 2.5rem;
+        width: 20rem;
+        border: 1px solid grey;
+        margin: .6rem;
+    }
+    .input-container input{
+        border: none;
+        width: 90%;
+        outline: none;
+    }
+    center{
+        border-bottom:  1px solid black;
+    }
+    
+    .submit{
+        background-color: lightblue;
+    }
+    input[type="submit"]{
+        background-color:lightblue ;
+        cursor: pointer;
+    }
+    ::placeholder{
+        font-size: 19px;
+        font-family: tahoma;
+    }
+    h1{
+        font-weight: bold;
+        font-size: 22px;
+    }
+    form .form-container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        border: 1px solid black;
+        background-color: white;
+        width: 25rem;
+        height: 19rem;
+    }
+
+</style>
+<body>
+
+       <form action="/login" method="POST">
+        <div class="form-container">
+            <h1>Enter your Details</h1>
+        <div class="input-container">
+            <input name="username" type="text" placeholder="Username" >
+        </div>
+        <div class="input-container">
+            <input name="pword" type="password" placeholder="password" >
+        </div>
+        <div class="input-container submit">
+            <input type="submit" value="submit">
+        </div>
+
+        </div>
+       
+       </form>
+ 
+
+  
+</body>
+</html>
